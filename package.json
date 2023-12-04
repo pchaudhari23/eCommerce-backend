@@ -1,0 +1,21 @@
+{
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "description": "MERN Backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "test"
+  },
+  "author": "Pritam Chaudhari",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
