@@ -12,7 +12,7 @@ const connectToDatabase = async (callback) => {
     _db = client.db();
     callback();
   } catch (error) {
-    console.error("Failed to connect to MongoDB: ", err);
+    console.error("Failed to connect to MongoDB: ", error);
     process.exit(1); // Exit the application if connection fails
   }
 };

@@ -3,6 +3,8 @@ const Product = require("../models/product");
 
 const router = express.Router();
 
+//TO-DO: Put the callback functions in a controller file
+
 // CREATE
 router.post("/addproduct", async (req, res) => {
   const { name, description, category, price } = req.body;

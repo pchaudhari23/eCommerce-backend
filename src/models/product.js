@@ -5,7 +5,7 @@ const dbHelpers = require("../db/dbHelpers");
 
 class Product {
   constructor(_id, name, description, category, price) {
-    this._id = _id ? new mongodb.ObjectId(id) : null;
+    this._id = _id ? new mongodb.ObjectId(_id) : null;
     this.name = name;
     this.description = description;
     this.category = category;
