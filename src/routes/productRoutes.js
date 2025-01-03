@@ -1,5 +1,6 @@
 const express = require("express");
 const Product = require("../models/product");
+const authenticateToken = require("../middlewares/authorization");
 
 const router = express.Router();
 
@@ -20,7 +21,7 @@ router.post("/addproduct", async (req, res) => {
 });
 
 // RETRIEVE ALL
-router.get("/products", async (req, res) => {
+router.get("/products", authenticateToken, async (req, res) => {
   try {
     const product = await Product.fetchAll();
     res.status(200).send(product);
